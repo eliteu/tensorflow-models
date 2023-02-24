@@ -61,7 +61,7 @@ function loadHandDetectorModel() {
     return __awaiter(this, void 0, void 0, function () {
         var HANDDETECT_MODEL_PATH;
         return __generator(this, function (_a) {
-            HANDDETECT_MODEL_PATH = 'https://tfhub.dev/mediapipe/tfjs-model/handdetector/1/default/1';
+            HANDDETECT_MODEL_PATH = 'https://hub.tensorflow.google.cn/mediapipe/tfjs-model/handdetector/1/default/1';
             return [2 /*return*/, tfconv.loadGraphModel(HANDDETECT_MODEL_PATH, { fromTFHub: true })];
         });
     });
@@ -73,7 +73,7 @@ function loadHandPoseModel() {
     return __awaiter(this, void 0, void 0, function () {
         var HANDPOSE_MODEL_PATH;
         return __generator(this, function (_a) {
-            HANDPOSE_MODEL_PATH = 'https://tfhub.dev/mediapipe/tfjs-model/handskeleton/1/default/1';
+            HANDPOSE_MODEL_PATH = 'https://hub.tensorflow.google.cn/mediapipe/tfjs-model/handskeleton/1/default/1';
             return [2 /*return*/, tfconv.loadGraphModel(HANDPOSE_MODEL_PATH, { fromTFHub: true })];
         });
     });
@@ -85,7 +85,7 @@ function loadAnchors() {
     return __awaiter(this, void 0, void 0, function () {
         return __generator(this, function (_a) {
             return [2 /*return*/, tf.util
-                    .fetch('https://tfhub.dev/mediapipe/tfjs-model/handskeleton/1/default/1/anchors.json?tfjs-format=file')
+                    .fetch('https://cdn.aimaker.space/tfhub-tfjs-modules/mediapipe/tfjs-model/handskeleton/1/default/1/anchors.json')
                     .then(function (d) { return d.json(); })];
         });
     });
